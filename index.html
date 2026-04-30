@@ -3,30 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sukbin Lee</title>
+  <title>Sukbhin Lee</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
 
-<div id="sidebar" class="sidebar">
-  <div class="sidebar-content">
-    <img src="profile.jpg" class="sidebar-profile" alt="profile">
-    <h2>Lee Sukbin</h2>
-    <p>AI · Data · Healthcare</p>
-
-    <a href="#about" onclick="toggleSidebar()">About</a>
-    <a href="#project" onclick="toggleSidebar()">Project</a>
-    <a href="#study" onclick="toggleSidebar()">Study</a>
-    <a href="#contact" onclick="toggleSidebar()">Contact</a>
-
-    <div class="sidebar-buttons">
-      <a href="https://github.com/sukbhin14">GitHub</a>
-      <a href="https://sukbhin14.github.io">Portfolio</a>
-    </div>
-  </div>
-</div>
   <nav>
     <a href="#about">About</a>
     <a href="#project">Project</a>
@@ -35,13 +17,15 @@
   </nav>
 
   <main>
+
+    <!-- About -->
     <section id="about">
       <h1>About</h1>
 
       <div class="profile">
         <img src="profile.jpg" alt="Sukbhin Lee" />
         <div>
-          <h2>Lee Sukbin</h2>
+          <h2>Lee Sukbhin</h2>
           <p class="subtitle">Computer Science Student</p>
           <p>AI · Data Analysis · Healthcare Applications</p>
         </div>
@@ -51,7 +35,10 @@
       <div class="box">
         <p>2001.01.04 Republic of Korea, Ulsan</p>
         <p>Email: sukbhin14@hufs.ac.kr</p>
-        <p>Github: <a href="https://github.com/sukbhin14">https://github.com/sukbhin14</a></p>
+        <p>
+          Github:
+          <a href="https://github.com/sukbhin14">github.com/sukbhin14</a>
+        </p>
       </div>
 
       <h2>Education</h2>
@@ -68,15 +55,16 @@
       </ul>
     </section>
 
+    <!-- Project -->
     <section id="project">
       <h1>Project</h1>
 
       <h2>2026</h2>
       <div class="timeline">
-        <p><strong>MCP-based Anomaly Detection Project(ongoing)</strong></p>
+        <p><strong>MCP-based Anomaly Detection Project (ongoing)</strong></p>
         <p>Developing an agentic framework for anomaly detection.</p>
 
-        <p><strong>Tourism Data Web/App Development Contest(ongoing)</strong></p>
+        <p><strong>Tourism Data Web/App Development Contest (ongoing)</strong></p>
         <p>Building a web/app service using public tourism data.</p>
       </div>
 
@@ -87,6 +75,7 @@
       </div>
     </section>
 
+    <!-- Study -->
     <section id="study">
       <h1>Study</h1>
 
@@ -98,22 +87,30 @@
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
       <h1>Contact</h1>
       <div class="box">
         <p>Email: sukbhin14@hufs.ac.kr</p>
-        <p>Github: <a href="https://github.com/sukbhin14">github.com/sukbhin14</a></p>
+        <p>
+          Github:
+          <a href="https://github.com/sukbhin14">github.com/sukbhin14</a>
+        </p>
+
+        <!-- 버튼 추가 (추천) -->
+        <div class="button-group">
+          <a href="https://github.com/sukbhin14" class="btn">View GitHub</a>
+          <a href="https://sukbhin14.github.io" class="btn">View Portfolio</a>
+        </div>
+
       </div>
     </section>
 
     <footer>
       © 2026 Lee Sukbhin. All rights reserved.
     </footer>
+
   </main>
-  <script>
-  function toggleSidebar() {
-    document.getElementById("sidebar").classList.toggle("active");
-  }
-</script>
+
 </body>
 </html>
