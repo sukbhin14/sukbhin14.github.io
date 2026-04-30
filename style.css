@@ -110,3 +110,83 @@ footer {
   padding-top: 30px;
   font-size: 13px;
 }
+
+.menu-btn {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 1001;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 300px;
+  height: 100vh;
+  background: linear-gradient(135deg, #111827, #1e3a8a);
+  color: white;
+  transition: 0.35s ease;
+  z-index: 1000;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-content {
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.sidebar-profile {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 15px;
+}
+
+.sidebar h2 {
+  color: white;
+  border: none;
+  margin: 10px 0 5px;
+  padding: 0;
+}
+
+.sidebar p {
+  color: #cbd5e1;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  border-bottom: none;
+  padding: 13px 0;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  color: #93c5fd;
+}
+
+.sidebar-buttons {
+  margin-top: 30px;
+}
+
+.sidebar-buttons a {
+  background: rgba(255, 255, 255, 0.15);
+  margin: 10px 0;
+  border-radius: 8px;
+}
