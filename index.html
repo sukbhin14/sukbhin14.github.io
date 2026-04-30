@@ -8,6 +8,25 @@
 </head>
 
 <body>
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+<div id="sidebar" class="sidebar">
+  <div class="sidebar-content">
+    <img src="profile.jpg" class="sidebar-profile" alt="profile">
+    <h2>Lee Sukbin</h2>
+    <p>AI · Data · Healthcare</p>
+
+    <a href="#about" onclick="toggleSidebar()">About</a>
+    <a href="#project" onclick="toggleSidebar()">Project</a>
+    <a href="#study" onclick="toggleSidebar()">Study</a>
+    <a href="#contact" onclick="toggleSidebar()">Contact</a>
+
+    <div class="sidebar-buttons">
+      <a href="https://github.com/sukbhin14">GitHub</a>
+      <a href="https://sukbhin14.github.io">Portfolio</a>
+    </div>
+  </div>
+</div>
   <nav>
     <a href="#about">About</a>
     <a href="#project">Project</a>
@@ -91,5 +110,10 @@
       © 2026 Lee Sukbhin. All rights reserved.
     </footer>
   </main>
+  <script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+  }
+</script>
 </body>
 </html>
