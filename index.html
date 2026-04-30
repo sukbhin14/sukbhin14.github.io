@@ -3,177 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sukbin Portfolio</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f6f4ff;
-      color: #222;
-    }
-
-    header {
-      background: linear-gradient(135deg, #6c63ff, #b983ff);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid white;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin: 10px 0;
-    }
-
-    header p {
-      font-size: 18px;
-      margin: 6px 0;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 20px;
-      padding: 30px;
-      margin-bottom: 25px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    }
-
-    h2 {
-      color: #6c63ff;
-      margin-top: 0;
-    }
-
-    .skills span {
-      display: inline-block;
-      background: #eee9ff;
-      color: #5a4fdc;
-      padding: 10px 14px;
-      border-radius: 20px;
-      margin: 6px;
-      font-weight: bold;
-    }
-
-    .project {
-      border-left: 5px solid #6c63ff;
-      padding-left: 15px;
-      margin-bottom: 18px;
-    }
-
-    .project h3 {
-      margin-bottom: 6px;
-    }
-
-    a.button {
-      display: inline-block;
-      margin-top: 10px;
-      background: #6c63ff;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a.button:hover {
-      background: #5148d9;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #777;
-    }
-  </style>
+  <title>Sukbin Lee</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <!-- 사진 넣고 싶으면 아래 src 주소만 바꾸면 됨 -->
-    <img class="profile-img" src="https://github.com/sukbhin14.png" alt="profile image" />
+  <nav>
+    <a href="#about">About</a>
+    <a href="#project">Project</a>
+    <a href="#study">Study</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <h1>👋 Hi, I'm Sukbin</h1>
-    <p>Hankuk University of Foreign Studies</p>
-    <p>Computer Science & Chinese Language and Culture</p>
-    <p>Interested in AI, Data Analysis, and Healthcare Applications</p>
-  </header>
+  <main>
+    <section id="about">
+      <h1>About</h1>
 
-  <main class="container">
-    <section class="card">
-      <h2>🚀 About Me</h2>
-      <p>
-        I am a Computer Science student at HUFS, double majoring in Chinese Language and Culture.
-        I am interested in AI, data analysis, and healthcare applications.
-        Currently, I am working on an MCP-based anomaly detection project.
-      </p>
+      <div class="profile">
+        <img src="profile.jpg" alt="Sukbin Lee" />
+        <div>
+          <h2>Lee Sukbin</h2>
+          <p class="subtitle">Computer Science Student</p>
+          <p>AI · Data Analysis · Healthcare Applications</p>
+        </div>
+      </div>
+
+      <h2>Personal Data</h2>
+      <div class="box">
+        <p>2001.01.04 Born in Ulsan, Republic of Korea</p>
+        <p>Email: sukbhin14@hufs.ac.kr</p>
+        <p>Github: <a href="https://github.com/sukbhin14">https://github.com/sukbhin14</a></p>
+      </div>
+
+      <h2>Education</h2>
+      <div class="box">
+        <p><strong>Hankuk University of Foreign Studies (HUFS)</strong></p>
+        <p>Computer Science & Chinese Language and Culture</p>
+      </div>
+
+      <h2>Research Interest</h2>
+      <ul>
+        <li>Artificial Intelligence</li>
+        <li>Data Analysis</li>
+        <li>Healthcare Data Applications</li>
+        <li>Anomaly Detection</li>
+      </ul>
     </section>
 
-    <section class="card">
-      <h2>🛠 Skills</h2>
-      <div class="skills">
-        <span>Python</span>
-        <span>C</span>
-        <span>Java</span>
-        <span>Git</span>
-        <span>Linux</span>
-        <span>Unity</span>
-        <span>HTML/CSS</span>
+    <section id="project">
+      <h1>Project</h1>
+
+      <h2>2026</h2>
+      <div class="timeline">
+        <p><strong>MCP-based Anomaly Detection Project</strong></p>
+        <p>Developing an agentic framework for anomaly detection.</p>
+
+        <p><strong>Tourism Data Web/App Development Contest</strong></p>
+        <p>Building a web/app service using public tourism data.</p>
+      </div>
+
+      <h2>2025</h2>
+      <div class="timeline">
+        <p><strong>HUFS Forest</strong></p>
+        <p>Unity-based game development project.</p>
       </div>
     </section>
 
-    <section class="card">
-      <h2>📂 Projects</h2>
+    <section id="study">
+      <h1>Study</h1>
 
-      <div class="project">
-        <h3>MCP Anomaly Detection Project</h3>
-        <p>
-          An ongoing project focused on building an MCP-based agentic framework
-          for anomaly detection.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Unity Game Projects</h3>
-        <p>
-          Developed Unity-based projects such as Animal Forest and Forest of Wisdom.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Study Notes</h3>
-        <p>
-          Organized programming study notes for Python, C, Java, Linux, and Web Programming.
-        </p>
+      <h2>Skills and Certification</h2>
+      <div class="box">
+        <p><strong>Language:</strong> Python, C, Java</p>
+        <p><strong>Framework / Tools:</strong> Git, Linux, Unity, HTML/CSS</p>
+        <p><strong>Certification:</strong> HSK Level 5, Engineer Information Processing, SQLD</p>
       </div>
     </section>
 
-    <section class="card">
-      <h2>📫 Contact</h2>
-      <p>GitHub: <a href="https://github.com/sukbhin14">github.com/sukbhin14</a></p>
-      <a class="button" href="https://github.com/sukbhin14">Visit My GitHub</a>
+    <section id="contact">
+      <h1>Contact</h1>
+      <div class="box">
+        <p>Email: sukbhin14@hufs.ac.kr</p>
+        <p>Github: <a href="https://github.com/sukbhin14">github.com/sukbhin14</a></p>
+      </div>
     </section>
+
+    <footer>
+      © 2026 Lee Sukbin. All rights reserved.
+    </footer>
   </main>
-
-  <footer>
-    © 2026 Sukbin. All rights reserved.
-  </footer>
 </body>
 </html>
